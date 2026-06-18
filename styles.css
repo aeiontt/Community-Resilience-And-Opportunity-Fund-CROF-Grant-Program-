@@ -1,1025 +1,606 @@
-/* ==================================
-   CROF GRANTS PREMIUM WEBSITE CSS
-   PART 1 - GLOBAL + NAVIGATION + HERO
+/* ===================================
+   CROF PLATINUM V3
+   PREMIUM FOUNDATION WEBSITE
 =================================== */
 
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth;
 }
 
-
-body {
-    font-family: "Inter", sans-serif;
-    background: #ffffff;
-    color: #222;
-    overflow-x: hidden;
-}
-
-
-/* =========================
-   GLOBAL SECTIONS
-========================= */
-
-section {
-    width: 100%;
-    padding: 120px 8%;
-    text-align: center;
+body{
+    font-family:'Inter', sans-serif;
+    color:#1a1a1a;
+    background:#ffffff;
+    overflow-x:hidden;
 }
 
 
-h1, h2, h3, h4 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
+/* CONTAINER - THIS CENTERS EVERYTHING */
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:0 auto;
 }
 
 
-h2 {
-    font-size: 50px;
-    color: #072A60;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+/* SECTION SPACING */
+
+section{
+    padding:110px 0;
 }
 
 
-p {
-    font-size: 18px;
-    line-height: 1.9;
+/* HEADINGS */
+
+h1,h2,h3,h4{
+    font-family:'Poppins', sans-serif;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-heading p{
+    color:#0057D9;
+    font-weight:800;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+.section-heading h2{
+    font-size:50px;
+    font-weight:900;
+    color:#041E42;
+    margin-top:15px;
 }
 
 
-/* =========================
-   NAVIGATION BAR
-========================= */
+/* ==========================
+   NAVIGATION
+========================== */
 
-.header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-    background: rgba(7, 42, 96, 0.95);
-    backdrop-filter: blur(12px);
+.header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:999;
+    background:rgba(4,30,66,.92);
+    backdrop-filter:blur(12px);
+}
+
+.navbar{
+    height:90px;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 50px;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:900;
+}
+
+.logo span{
+    color:#F5B700;
+}
+
+.nav-menu{
+    display:flex;
+    gap:35px;
+    list-style:none;
+}
+
+.nav-menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s;
+}
+
+.nav-menu a:hover{
+    color:#F5B700;
 }
 
 
-.navbar {
-    height: 90px;
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
+.apply-button{
+    background:#F5B700;
+    color:#041E42;
+    text-decoration:none;
+    padding:15px 28px;
+    border-radius:40px;
+    font-weight:900;
 }
 
 
-.logo {
-    position: absolute;
-    left: 60px;
-
-    color: white;
-    font-size: 34px;
-    font-weight: 900;
-
-    letter-spacing: 3px;
-}
-
-
-.logo span {
-    color: #D4AF37;
-}
-
-
-/* MENU */
-
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 45px;
-}
-
-
-.nav-menu a {
-
-    color: white;
-
-    text-decoration: none;
-
-    font-size: 16px;
-
-    font-weight: 800;
-
-    text-transform: uppercase;
-
-    transition: .3s;
-}
-
-
-.nav-menu a:hover {
-
-    color: #D4AF37;
-
-}
-
-
-/* APPLY BUTTON */
-
-.nav-button {
-
-    position: absolute;
-
-    right: 60px;
-
-    background: #D4AF37;
-
-    color: #072A60;
-
-    padding: 16px 34px;
-
-    border-radius: 50px;
-
-    text-decoration: none;
-
-    font-weight: 900;
-
-    text-transform: uppercase;
-
-    transition: .3s;
-
-}
-
-
-.nav-button:hover {
-
-    transform: scale(1.08);
-
-    background: white;
-
-}
-
-
-/* =========================
+/* ==========================
    HERO SECTION
-========================= */
+========================== */
 
-
-.hero {
-
-    width: 100%;
-
-    height: 100vh;
-
-
+.hero{
+    height:100vh;
     background:
     linear-gradient(
-    rgba(7,42,96,.80),
-    rgba(7,42,96,.85)
+        rgba(4,30,66,.82),
+        rgba(4,30,66,.82)
     ),
     url("hero.jpg");
 
+    background-size:cover;
+    background-position:center;
 
-    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
 
-    background-position: center;
+.hero-content{
+    width:90%;
+    max-width:1100px;
+}
 
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-
-    text-align: center;
-
+.small-title{
+    color:#F5B700;
+    font-weight:800;
+    letter-spacing:4px;
 }
 
 
-.hero-content {
-
-    width: 85%;
-
-    max-width: 1100px;
-
-    margin: auto;
-
+.hero h1{
+    color:white;
+    font-size:72px;
+    font-weight:900;
+    line-height:1.1;
+    margin:25px 0;
 }
 
 
-.hero h1 {
+.hero-text{
+    color:#F2F2F2;
+    font-size:22px;
+    max-width:850px;
+    margin:auto;
+}
 
+
+.hero-buttons{
+    margin:45px 0;
+}
+
+
+.btn-primary,
+.btn-secondary{
+    display:inline-block;
+    margin:10px;
+    padding:18px 38px;
+    border-radius:50px;
+    font-weight:900;
+    text-decoration:none;
+    transition:.3s;
+}
+
+
+.btn-primary{
+    background:#F5B700;
+    color:#041E42;
+}
+
+
+.btn-secondary{
+    border:2px solid white;
+    color:white;
+}
+
+
+.btn-primary:hover,
+.btn-secondary:hover{
+    transform:translateY(-5px);
+}
+
+
+/* HERO STATS */
+
+.hero-stats{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    margin-top:50px;
+}
+
+.hero-stats h2{
+    color:#F5B700;
+    font-size:45px;
+}
+
+.hero-stats p{
+    color:white;
+}
+
+
+/* ==========================
+   ABOUT SECTION
+========================== */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:25px;
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+}
+
+
+.about-text{
+    text-align:left;
+}
+
+.about-text h3{
+    color:#041E42;
+    font-size:32px;
+    margin:25px 0 15px;
+}
+
+
+/* ==========================
+   PROGRAM CARDS
+========================== */
+
+.program-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+
+.program-card{
+    background:white;
+    padding:45px 30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.10);
+    border-top:7px solid #0057D9;
+    transition:.4s;
+}
+
+
+.program-card:hover{
+    transform:translateY(-15px);
+}
+
+
+.icon{
+    font-size:55px;
+}
+
+/* ==========================
+   IMPACT SECTION
+========================== */
+
+.impact {
+    background: linear-gradient(135deg, #041E42, #0057D9);
     color: white;
-
-    font-size: 72px;
-
-    font-weight: 900;
-
-    text-transform: uppercase;
-
-    line-height: 1.1;
-
-}
-
-
-.hero p {
-
-    color: #F2F2F2;
-
-    font-size: 22px;
-
-    margin: 35px auto;
-
-    max-width: 850px;
-
-}
-
-
-/* HERO BUTTONS */
-
-.hero-buttons {
-
-    margin-top: 45px;
-
-}
-
-
-.primary-btn,
-.secondary-btn {
-
-    display: inline-block;
-
-    margin: 10px;
-
-    padding: 18px 42px;
-
-    border-radius: 50px;
-
-    text-decoration: none;
-
-    font-size: 16px;
-
-    font-weight: 900;
-
-    text-transform: uppercase;
-
-    transition: .3s;
-
-}
-
-
-.primary-btn {
-
-    background: #D4AF37;
-
-    color: #072A60;
-
-}
-
-
-.secondary-btn {
-
-    border: 3px solid white;
-
-    color: white;
-
-}
-
-
-.primary-btn:hover,
-.secondary-btn:hover {
-
-    transform: translateY(-6px);
-
-}
-
-
-/* TRUST BADGES */
-
-.hero-badges {
-
-    margin-top: 60px;
-
-    display: flex;
-
-    justify-content: center;
-
-    gap: 25px;
-
-    flex-wrap: wrap;
-
-}
-
-
-.hero-badges span {
-
-    background: rgba(255,255,255,0.15);
-
-    color: white;
-
-    padding: 16px 26px;
-
-    border-radius: 50px;
-
-    font-weight: 700;
-
-}
-
-
-
-/* ==================================
-   PART 2 - BUSINESS SECTIONS & CARDS
-=================================== */
-
-
-/* MAIN CONTENT SECTIONS */
-
-.about,
-.services,
-.support,
-.testimonials {
-    background: #ffffff;
     text-align: center;
 }
 
-
-/* SECTION INTRO TEXT */
-
-.section-text {
-    max-width: 900px;
-    margin: 0 auto 60px;
-    color: #555;
-    font-size: 20px;
+.light p {
+    color: #F5B700;
 }
 
-
-/* ==================================
-   PROFESSIONAL CARD LAYOUT
-=================================== */
-
-.cards {
-
-    width: 100%;
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 35px;
-
-    margin-top: 60px;
-
-}
-
-
-/* INDIVIDUAL CARDS */
-
-.card {
-
-    background: white;
-
-    padding: 50px 35px;
-
-    border-radius: 25px;
-
-    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
-
-    transition: 0.4s ease;
-
-    border-top: 8px solid #0B3D91;
-
-}
-
-
-.card:hover {
-
-    transform: translateY(-15px);
-
-    box-shadow: 0 35px 60px rgba(0,0,0,0.15);
-
-}
-
-
-/* CARD ICONS */
-
-.card .icon {
-
-    font-size: 60px;
-
-    margin-bottom: 25px;
-
-}
-
-
-/* CARD TITLES */
-
-.card h3 {
-
-    color: #072A60;
-
-    font-size: 28px;
-
-    margin-bottom: 18px;
-
-    text-transform: uppercase;
-
-}
-
-
-/* CARD TEXT */
-
-.card p {
-
-    color: #555;
-
-    font-size: 17px;
-
-}
-
-
-/* ==================================
-   MISSION & VISION SPLIT SECTION
-=================================== */
-
-.mission-container {
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 40px;
-
-    margin-top: 60px;
-
-}
-
-
-.mission-box {
-
-    background: linear-gradient(
-        135deg,
-        #072A60,
-        #0B3D91
-    );
-
+.light h2 {
     color: white;
-
-    padding: 60px 45px;
-
-    border-radius: 25px;
-
-    box-shadow: 0 25px 60px rgba(7,42,96,.35);
-
 }
 
 
-.mission-box h3 {
-
-    color: #D4AF37;
-
-    font-size: 32px;
-
-    margin-bottom: 25px;
-
-}
-
-
-/* ==================================
-   PREMIUM BLUE INFORMATION SECTION
-=================================== */
-
-.blue-panel {
-
-    background: linear-gradient(
-        135deg,
-        #072A60,
-        #0B3D91
-    );
-
-    color: white;
-
-    padding: 120px 8%;
-
-    text-align: center;
-
-}
-
-
-.blue-panel h2 {
-
-    color: white;
-
-}
-
-
-.blue-panel p {
-
-    max-width: 900px;
-
-    margin: auto;
-
-    font-size: 20px;
-
-}
-
-
-/* ==================================
-   IMPACT STATISTICS
-=================================== */
-
-.stats {
-
-    margin-top: 70px;
-
+.impact-grid {
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
     gap: 30px;
-
+    margin-top: 70px;
 }
 
 
-.stat {
-
-    background: white;
-
-    padding: 45px 25px;
-
+.impact-box {
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(12px);
     border-radius: 25px;
-
-    box-shadow: 0 15px 40px rgba(0,0,0,.12);
-
+    padding: 50px 25px;
+    transition: .4s;
+    border: 1px solid rgba(255,255,255,.2);
 }
 
 
-.stat h3 {
-
-    color: #D4AF37;
-
-    font-size: 60px;
-
-    margin-bottom: 15px;
-
+.impact-box:hover {
+    transform: translateY(-12px);
+    background: rgba(255,255,255,0.2);
 }
 
 
-.stat p {
+.impact-box h3 {
+    font-size: 55px;
+    color: #F5B700;
+    font-weight: 900;
+}
 
-    color: #072A60;
 
+.impact-box span {
     font-size: 18px;
-
-    font-weight: 700;
-
-}
-
-
-/* ==================================
-   WHY CHOOSE CROF
-=================================== */
-
-.features {
-
-    margin-top: 60px;
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 25px;
-
-}
-
-
-.feature {
-
-    background: #F4F8FF;
-
-    padding: 30px;
-
-    border-left: 8px solid #D4AF37;
-
-    border-radius: 15px;
-
-    font-size: 19px;
-
-    font-weight: 700;
-
-    color: #072A60;
-
-    text-align: left;
-
-}
-
-
-/* ==================================
-   TESTIMONIAL STYLE
-=================================== */
-
-.testimonial-card {
-
-    background: #ffffff;
-
-    padding: 45px;
-
-    border-radius: 25px;
-
-    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-
-    position: relative;
-
-}
-
-
-.testimonial-card::before {
-
-    content: "❝";
-
-    position: absolute;
-
-    top: 10px;
-
-    left: 20px;
-
-    font-size: 65px;
-
-    color: #D4AF37;
-
-}
-
-
-.testimonial-card p {
-
-    margin-top: 40px;
-
-    font-size: 18px;
-
-    color: #444;
-
-}
-
-
-.testimonial-card h4 {
-
-    margin-top: 25px;
-
-    color: #072A60;
-
-    font-size: 18px;
-
-}
-
-
-/* ==================================
-   PART 3 - CONTACT & FOOTER
-=================================== */
-
-
-/* CONTACT SECTION */
-
-.contact {
-    background: linear-gradient(
-        135deg,
-        #F6F9FF,
-        #FFFFFF
-    );
-
-    text-align: center;
-}
-
-
-.contact h2 {
-    color: #072A60;
-}
-
-
-.contact p {
-    max-width: 800px;
-    margin: 20px auto;
-    color: #444;
-}
-
-
-/* CONTACT CARD */
-
-.contact-box {
-    max-width: 850px;
-    margin: 60px auto 0;
-    background: white;
-    padding: 60px 50px;
-    border-radius: 30px;
-    box-shadow: 0 25px 60px rgba(0,0,0,.12);
-}
-
-
-.contact-box h3 {
-    color: #072A60;
-    font-size: 30px;
-    margin-bottom: 25px;
-}
-
-
-.contact-info {
-    margin: 25px 0;
-    font-size: 20px;
     font-weight: 600;
 }
 
 
-/* BUTTONS */
+/* ==========================
+   WHY CHOOSE CROF
+========================== */
 
-.contact-button {
-    display: inline-block;
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+
+.why-card {
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.08);
+    border-top: 7px solid #F5B700;
+    transition: .4s;
+}
+
+
+.why-card:hover {
+    transform: translateY(-12px);
+}
+
+
+.why-card .icon {
+    font-size: 45px;
+}
+
+
+.why-card h3 {
+    margin: 20px 0;
+    color: #041E42;
+    font-size: 25px;
+}
+
+
+/* ==========================
+   TESTIMONIALS
+========================== */
+
+.testimonials {
+    background: #F7FAFF;
+}
+
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+
+.testimonial-card {
+    background: white;
+    padding: 45px 35px;
+    border-radius: 25px;
+    box-shadow: 0 15px 45px rgba(0,0,0,.08);
+}
+
+
+.stars {
+    color: #F5B700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.testimonial-card p {
+    color: #555;
+    font-style: italic;
+}
+
+
+.testimonial-card h4 {
     margin-top: 25px;
-    background: #D4AF37;
-    color: #072A60;
-    text-decoration: none;
-    padding: 18px 40px;
-    border-radius: 50px;
-    font-weight: 900;
-    text-transform: uppercase;
-    transition: .3s;
+    color: #041E42;
 }
 
 
-.contact-button:hover {
-    background: #072A60;
+/* ==========================
+   CONTACT SECTION
+========================== */
+
+.contact {
+    background: white;
+    text-align: center;
+}
+
+
+.contact-card {
+    background: linear-gradient(135deg, #041E42, #0057D9);
     color: white;
-    transform: translateY(-5px);
+    padding: 70px;
+    border-radius: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 50px;
+    box-shadow: 0 25px 60px rgba(0,87,217,.35);
 }
 
 
-/* WHATSAPP FLOATING BUTTON */
-
-.whatsapp-float {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    width: 70px;
-    height: 70px;
-    background: #25D366;
-    color: white;
-    border-radius: 50%;
-    font-size: 34px;
-    text-decoration: none;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,.3);
-
-    z-index: 9999;
-
-    animation: pulse 2s infinite;
+.contact-item .icon {
+    font-size: 55px;
+    margin-bottom: 20px;
 }
 
 
-/* WHATSAPP ANIMATION */
-
-@keyframes pulse {
-
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.15);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-
+.contact-item h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
 }
 
 
-/* ==================================
-   PROFESSIONAL FOOTER
-=================================== */
-
+/* ==========================
+   FOOTER
+========================== */
 
 footer {
-
-    background: #041A3D;
-
+    background: #020F25;
     color: white;
-
-    padding: 80px 8% 40px;
-
+    padding: 90px 0 35px;
 }
 
 
 .footer-grid {
-
     display: grid;
-
-    grid-template-columns:
-        2fr 1fr 1fr 1fr;
-
+    grid-template-columns: 2fr 1fr 1fr;
     gap: 50px;
-
-    text-align: left;
-
 }
 
 
-.footer-brand {
-
-    font-size: 32px;
-
-    font-weight: 900;
-
-    color: #D4AF37;
-
+.footer-logo {
+    color: #F5B700;
+    font-size: 35px;
     margin-bottom: 20px;
-
 }
 
 
-.footer-title {
-
-    font-size: 20px;
-
+.footer-grid h3 {
     color: white;
-
-    margin-bottom: 25px;
-
+    margin-bottom: 20px;
 }
 
 
 .footer-grid a {
-
     display: block;
-
-    color: #CFCFCF;
-
+    color: #BBBBBB;
     text-decoration: none;
-
     margin: 12px 0;
-
     transition: .3s;
-
 }
 
 
 .footer-grid a:hover {
-
-    color: #D4AF37;
-
+    color: #F5B700;
 }
 
 
-.footer-bottom {
-
-    margin-top: 50px;
-
+.copyright {
     text-align: center;
-
-    border-top: 1px solid rgba(255,255,255,.2);
-
-    padding-top: 30px;
-
-    color: #CCCCCC;
-
+    margin-top: 60px;
+    border-top: 1px solid rgba(255,255,255,.15);
+    padding-top: 25px;
+    color: #BBBBBB;
 }
 
 
-/* ==================================
-   FINAL RESPONSIVE DESIGN
-=================================== */
+/* ==========================
+   PREMIUM ANIMATIONS
+========================== */
+
+.program-card,
+.impact-box,
+.why-card,
+.testimonial-card {
+    transition: all .35s ease;
+}
 
 
-@media (max-width: 1024px) {
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
 
+@media (max-width: 992px) {
 
-    .cards,
-    .stats,
-    .footer-grid,
-    .mission-container,
-    .features {
-
-        grid-template-columns: 1fr 1fr;
-
+    .hero h1 {
+        font-size: 50px;
     }
 
+    .hero-stats,
+    .impact-grid,
+    .program-cards,
+    .testimonial-grid,
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 
 }
 
 
 @media (max-width: 768px) {
 
-
-    /* Navigation */
-
     .navbar {
-
         flex-direction: column;
-
         height: auto;
-
         padding: 25px;
-
+        gap: 20px;
     }
-
-
-    .logo,
-    .nav-button {
-
-        position: static;
-
-    }
-
 
     .nav-menu {
-
         flex-direction: column;
-
+        text-align: center;
         gap: 15px;
-
-        margin: 20px 0;
-
     }
-
-
-    /* Hero */
 
     .hero {
-
-        padding: 150px 25px 80px;
-
+        padding: 150px 20px 80px;
         height: auto;
-
     }
-
 
     .hero h1 {
-
-        font-size: 42px;
-
+        font-size: 38px;
     }
 
-
-    .hero p {
-
-        font-size: 18px;
-
+    .hero-stats {
+        flex-direction: column;
+        gap: 25px;
     }
 
-
-    /* Sections */
-
-    section {
-
-        padding: 80px 25px;
-
-    }
-
-
-    h2 {
-
-        font-size: 35px;
-
-    }
-
-
-    /* Single column */
-
-    .cards,
-    .stats,
-    .footer-grid,
-    .mission-container,
-    .features {
-
-        grid-template-columns: 1fr;
-
-    }
-
-
+    .about-grid,
+    .program-cards,
+    .impact-grid,
+    .why-grid,
+    .testimonial-grid,
+    .contact-card,
     .footer-grid {
+        grid-template-columns: 1fr;
+    }
 
+    .about-text {
         text-align: center;
-
     }
 
-
-    .contact-box {
-
-        padding: 40px 25px;
-
+    .section-heading h2 {
+        font-size: 34px;
     }
 
+    .contact-card {
+        padding: 45px 25px;
+    }
+
+    .navbar {
+        padding-bottom: 25px;
+    }
 }
-
-
-/* ==========================
-   END OF CROF PREMIUM CSS
-========================== */
