@@ -11,45 +11,56 @@
 <body>
 
     <div class="top-bar">
-        <a href="mailto:rocketmaninnovatex@gmail.com"><i class="fa-solid fa-envelope"></i> rocketmaninnovatex@gmail.com</a>
-        <a href="https://wa.me/15122303118" target="_blank"><i class="fa-solid fa-phone"></i> +1 (512) 230-3118</a>
+        <div class="top-bar-inner">
+            <a href="mailto:rocketmaninnovatex@gmail.com"><i class="fa-solid fa-envelope"></i> rocketmaninnovatex@gmail.com</a>
+            <a href="https://wa.me/15122303118" target="_blank"><i class="fa-solid fa-phone"></i> +1 (512) 230-3118</a>
+        </div>
     </div>
 
     <header id="main-header">
         <div class="nav-inner">
-            <a href="#" class="logo">CROF</a>
-            <nav class="nav-links">
-                <a href="#about" class="nav-item">About</a>
+            <a href="#" class="logo">CROF<span style="color: var(--color-blue);">.</span></a>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-item">About Organization</a>
                 <a href="#services" class="nav-item">Programs</a>
                 <a href="#impact" class="nav-item">Impact</a>
-                <a href="#contact" class="btn btn-primary" style="color: white; padding: 0.6rem 1.5rem;">Contact Us</a>
+                <a href="#contact" class="btn btn-primary nav-btn">Contact Us</a>
             </nav>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
 
     <section class="hero">
-        <div class="container hero-grid" style="padding-top: 0; padding-bottom: 0;">
-            <div class="hero-text">
-                <span class="section-label" style="color: #60A5FA;">Community Resilience & Opportunity Fund</span>
-                <h1>Empowering Communities. Creating Opportunities. Transforming Futures.</h1>
+        <div class="container hero-grid">
+            <div class="hero-text fade-up">
+                <span class="section-label" style="color: #93C5FD;">Community Resilience & Opportunity Fund</span>
+                <h1>Empowering Communities.<br>Transforming Futures.</h1>
                 <p>Dedicated to supporting individuals, entrepreneurs, and community initiatives through strategic funding and sustainable development programs.</p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <a href="#about" class="btn btn-primary">Learn About Our Mission</a>
-                    <a href="#contact" class="btn btn-outline" style="color: white; border-color: white;">Apply for Support</a>
+                <div class="hero-actions">
+                    <a href="#about" class="btn btn-primary">Our Mission <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-outline-light">Apply for Support</a>
                 </div>
             </div>
-            <div class="hero-image"></div>
+            <div class="hero-image-wrapper fade-up delay-1">
+                <div class="hero-image"></div>
+            </div>
         </div>
     </section>
 
     <section class="mv-section">
-        <div class="container mv-grid" style="padding: 0;">
-            <div class="mv-card">
-                <h3><i class="fa-solid fa-compass"></i> Our Mission</h3>
+        <div class="container mv-grid">
+            <div class="mv-card fade-up">
+                <div class="icon-wrapper"><i class="fa-solid fa-compass"></i></div>
+                <h3>Our Mission</h3>
                 <p>To empower individuals and communities through accessible funding, innovative programs, and strategic partnerships that promote economic growth, education, and long-term resilience.</p>
             </div>
-            <div class="mv-card">
-                <h3><i class="fa-solid fa-eye"></i> Our Vision</h3>
+            <div class="mv-card fade-up delay-1">
+                <div class="icon-wrapper"><i class="fa-solid fa-eye"></i></div>
+                <h3>Our Vision</h3>
                 <p>To become a trusted, authoritative catalyst for structural community development, opportunity creation, and sustainable socio-economic impact worldwide.</p>
             </div>
         </div>
@@ -57,25 +68,27 @@
 
     <section id="about" class="container">
         <div class="about-grid">
-            <div class="about-text">
+            <div class="about-text fade-up">
                 <span class="section-label">Who We Are</span>
-                <h2 class="section-title" style="margin-bottom: 1.5rem;">A Mission-Driven Organization</h2>
+                <h2 class="section-title">A Mission-Driven Organization</h2>
                 <p>The Community Resilience and Opportunity Fund (CROF) is focused on empowering individuals and communities through targeted, strategic funding opportunities and robust development initiatives.</p>
-                <p>We believe that access to resources is the fundamental baseline required to transform lives, strengthen community foundations, and create lasting economic and social impact. Applications are reviewed based on program objectives, community impact, demonstrated need, feasibility, and strict alignment with our core mission.</p>
-                <p><strong>Our Commitment:</strong> CROF is strictly committed to promoting fairness, transparency, accountability, and responsible stewardship in all funding and support activities.</p>
+                <p>We believe that access to resources is the fundamental baseline required to transform lives, strengthen community foundations, and create lasting economic and social impact.</p>
+                <div class="commitment-box">
+                    <strong><i class="fa-solid fa-shield-halved"></i> Our Commitment:</strong> 
+                    <span>CROF is strictly committed to promoting fairness, transparency, accountability, and responsible stewardship in all funding and support activities.</span>
+                </div>
             </div>
             
-            <div class="support-list">
+            <div class="support-list fade-up delay-1">
                 <h4>Core Areas of Support</h4>
                 <ul>
-                    <li><i class="fa-solid fa-check-circle"></i> Small Business Development & Entrepreneurship</li>
-                    <li><i class="fa-solid fa-check-circle"></i> Educational Advancement & Career Development</li>
-                    <li><i class="fa-solid fa-check-circle"></i> Community Improvement Projects</li>
-                    <li><i class="fa-solid fa-check-circle"></i> Youth Empowerment Initiatives</li>
-                    <li><i class="fa-solid fa-check-circle"></i> Workforce Development Programs</li>
-                    <li><i class="fa-solid fa-check-circle"></i> Innovation & Technology-Based Projects</li>
-                    <li><i class="fa-solid fa-check-circle"></i> Charitable & Humanitarian Efforts</li>
-                    <li><i class="fa-solid fa-check-circle"></i> Community Resilience & Recovery Initiatives</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Small Business Development & Entrepreneurship</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Educational Advancement & Career Development</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Community Improvement Projects</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Youth Empowerment Initiatives</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Workforce Development Programs</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Innovation & Technology-Based Projects</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Community Resilience & Recovery Initiatives</li>
                 </ul>
             </div>
         </div>
@@ -83,34 +96,34 @@
 
     <section id="services" class="services-section">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label" style="color: #60A5FA;">What We Do</span>
-                <h2 class="section-title">Strategic Services & Programs</h2>
+            <div class="section-header fade-up">
+                <span class="section-label" style="color: #93C5FD;">What We Do</span>
+                <h2 class="section-title text-white">Strategic Services & Programs</h2>
                 <p class="section-subtitle">Delivering structured support systems designed for measurable outcomes.</p>
             </div>
 
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card fade-up">
                     <i class="fa-solid fa-chart-pie"></i>
                     <h3>Funding Opportunities</h3>
                     <p>Providing secure, accessible funding programs designed to underwrite growth, further education, and stimulate innovation.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card fade-up delay-1">
                     <i class="fa-solid fa-building-columns"></i>
                     <h3>Community Development</h3>
                     <p>Backing infrastructure and social initiatives that improve local municipalities and create sustainable socio-economic impact.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card fade-up delay-2">
                     <i class="fa-solid fa-briefcase"></i>
-                    <h3>Entrepreneurship Support</h3>
-                    <p>Assisting founders and business owners in accessing necessary capital and resources that encourage scalable business development.</p>
+                    <h3>Entrepreneur Support</h3>
+                    <p>Assisting founders and business owners in accessing necessary capital and resources that encourage scalable development.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card fade-up">
                     <i class="fa-solid fa-graduation-cap"></i>
                     <h3>Educational Support</h3>
                     <p>Promoting academic and technical advancement through highly targeted opportunities, grants, and assistance programs.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card fade-up delay-1">
                     <i class="fa-solid fa-network-wired"></i>
                     <h3>Capacity Building</h3>
                     <p>Providing strategic operational guidance, compliance support, and structural planning for long-term organizational success.</p>
@@ -120,23 +133,23 @@
     </section>
 
     <section id="impact" class="container">
-        <div class="section-header">
+        <div class="section-header fade-up">
             <span class="section-label">Community Impact</span>
             <h2 class="section-title">Measurable Results</h2>
-            <p class="section-subtitle">At CROF, we believe that sustainable change begins with opportunity. Hear from the organizations and individuals we support.</p>
+            <p class="section-subtitle text-dark">Sustainable change begins with opportunity. Hear from the organizations and individuals we support.</p>
         </div>
 
         <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <i class="fa-solid fa-quote-left"></i>
+            <div class="testimonial-card fade-up">
+                <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
                 <blockquote>"The support and guidance we received helped us launch our community project successfully. It provided the exact financial stability we required."</blockquote>
             </div>
-            <div class="testimonial-card">
-                <i class="fa-solid fa-quote-left"></i>
+            <div class="testimonial-card fade-up delay-1">
+                <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
                 <blockquote>"CROF connected us with operational opportunities that significantly improved our organization’s overall local impact and outreach."</blockquote>
             </div>
-            <div class="testimonial-card">
-                <i class="fa-solid fa-quote-left"></i>
+            <div class="testimonial-card fade-up delay-2">
+                <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
                 <blockquote>"The application process was professional, rigorous, and highly transparent. The support staff ensured our compliance every step of the way."</blockquote>
             </div>
         </div>
@@ -144,22 +157,26 @@
 
     <section id="contact" class="contact-section">
         <div class="container">
-            <div class="contact-wrapper">
-                <span class="section-label">Official Communication Channels</span>
+            <div class="contact-wrapper fade-up">
+                <span class="section-label">Official Channels</span>
                 <h2 class="section-title" style="margin-bottom: 1rem;">Get In Touch</h2>
-                <p style="color: var(--color-gray); margin-bottom: 3rem;">For formal inquiries regarding funding opportunities, corporate partnerships, organizational donations, or program participation, please contact CROF administrators directly.</p>
+                <p style="color: var(--color-gray); margin-bottom: 3rem;">For formal inquiries regarding funding opportunities, corporate partnerships, organizational donations, or program participation, please contact CROF directly.</p>
                 
                 <div class="contact-details">
-                    <div class="contact-item">
+                    <a href="mailto:rocketmaninnovatex@gmail.com" class="contact-item">
                         <i class="fa-solid fa-envelope"></i>
-                        <strong>Email Administration</strong>
-                        <a href="mailto:rocketmaninnovatex@gmail.com">rocketmaninnovatex@gmail.com</a>
-                    </div>
-                    <div class="contact-item">
+                        <div>
+                            <strong>Email Administration</strong>
+                            <span>rocketmaninnovatex@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/15122303118" target="_blank" class="contact-item">
                         <i class="fa-solid fa-phone"></i>
-                        <strong>Direct Line (WhatsApp)</strong>
-                        <a href="https://wa.me/15122303118" target="_blank">+1 (512) 230-3118</a>
-                    </div>
+                        <div>
+                            <strong>Direct WhatsApp</strong>
+                            <span>+1 (512) 230-3118</span>
+                        </div>
+                    </a>
                 </div>
 
                 <a href="https://wa.me/15122303118" target="_blank" class="btn btn-whatsapp">
@@ -170,9 +187,21 @@
     </section>
 
     <footer>
-        <span class="logo" style="color: white;">CROF</span>
-        <p>Empowering Communities. Creating Opportunities. Transforming Futures.</p>
-        <p style="margin-top: 2rem; color: #6B7280;">&copy; 2026 Community Resilience and Opportunity Fund. All Rights Reserved.</p>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="logo text-white">CROF.</span>
+                <p>Empowering Communities. Creating Opportunities. Transforming Futures.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#services">Programs</a>
+                <a href="#impact">Impact</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Community Resilience and Opportunity Fund. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
